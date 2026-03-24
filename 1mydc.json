@@ -1,17 +1,17 @@
 {
     "wallpaper": "https://bing.img.run/1920x1080.php",
-    /* 强行调用饭太硬最稳的爬虫大脑 */
-    "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/spider.jar;md5;458395568f6e8649f7b11910d93547f3",
+    /* 采用目前最稳的加速地址，确保你在马来西亚秒加载大脑 */
+    "spider": "https://codeberg.org/66/6/raw/branch/main/s.jar",
     "lives": [
         { "name": "🌐 自动更新·国内(IPv6)", "type": 0, "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u", "playerType": 1 },
         { "name": "📺 自动更新·全球(YueChan)", "type": 0, "url": "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u", "playerType": 1 }
     ],
     "sites": [
-        /* --- 强行缝合：饭太硬同款主页 --- */
-        { "key": "豆瓣", "name": "🎬 豆瓣·热映(主页评分)", "type": 3, "api": "csp_Douban", "searchable": 0, "quickSearch": 0, "filterable": 1, "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/h宣/TVBox/main/douban.json" },
-        { "key": "热荐", "name": "🔥 热门·推荐(聚合榜单)", "type": 3, "api": "csp_AppHot", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/h宣/TVBox/main/apphot.json" },
+        /* --- 首页：聚合主页逻辑，必须放在第一位 --- */
+        { "key": "豆瓣", "name": "🎬 豆瓣·热映(主页评分)", "type": 3, "api": "csp_Douban", "searchable": 0, "quickSearch": 0, "filterable": 1, "ext": "https://raw.githubusercontent.com/h%E5%AE%A3/TVBox/main/douban.json" },
+        { "key": "热荐", "name": "🔥 热门·推荐(聚合榜单)", "type": 3, "api": "csp_AppHot", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": "https://raw.githubusercontent.com/h%E5%AE%A3/TVBox/main/apphot.json" },
         
-        /* --- 你的 16 路高清采集站 --- */
+        /* --- 你的 16 路 4K 采集站 --- */
         { "key": "sn_json", "name": "💎 索尼蓝光(4K)", "type": 1, "api": "https://suoniapi.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         { "key": "lz_json", "name": "🎬 量子高清(4K)", "type": 1, "api": "https://cj.lziapi.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         { "key": "hx_json", "name": "🌟 恒星资源(4K)", "type": 1, "api": "https://api.hxzy8.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 },
@@ -30,11 +30,7 @@
         { "key": "hy_json", "name": "🐯 虎牙资源", "type": 1, "api": "https://www.huyazy.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 }
     ],
     "parses": [
-        { "name": "💡 智能聚合解析", "type": 3, "url": "Web" },
-        { "name": "🦐 虾米多线", "type": 0, "url": "https://jx.xmflv.com/?url=" },
+        { "name": "💡 智能解析", "type": 3, "url": "Web" },
         { "name": "🛡️ 万能解析", "type": 0, "url": "https://jx.zui.cm/?url=" }
-    ],
-    "rules": [
-        { "name": "去广告", "hosts": ["vip.lz", "hd.lz", "vip.ffzy", "hd.ffzy", "suonizy", "hxzy"], "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY", "#EXTINF.*?\\s+.*?adjump.*?\\.ts"] }
     ]
 }
