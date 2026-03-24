@@ -1,15 +1,15 @@
 {
     "wallpaper": "https://bing.img.run/1920x1080.php",
-    /* 采用目前最稳的加速地址，确保你在马来西亚秒加载大脑 */
-    "spider": "https://codeberg.org/66/6/raw/branch/main/s.jar",
+    /* 强行改用饭太硬官方加速大脑，解决加载太久的问题 */
+    "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/spider.jar",
     "lives": [
         { "name": "🌐 自动更新·国内(IPv6)", "type": 0, "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u", "playerType": 1 },
-        { "name": "📺 自动更新·全球(YueChan)", "type": 0, "url": "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u", "playerType": 1 }
+        { "name": "📺 自动更新·全球", "type": 0, "url": "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u", "playerType": 1 }
     ],
     "sites": [
-        /* --- 首页：聚合主页逻辑，必须放在第一位 --- */
-        { "key": "豆瓣", "name": "🎬 豆瓣·热映(主页评分)", "type": 3, "api": "csp_Douban", "searchable": 0, "quickSearch": 0, "filterable": 1, "ext": "https://raw.githubusercontent.com/h%E5%AE%A3/TVBox/main/douban.json" },
-        { "key": "热荐", "name": "🔥 热门·推荐(聚合榜单)", "type": 3, "api": "csp_AppHot", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": "https://raw.githubusercontent.com/h%E5%AE%A3/TVBox/main/apphot.json" },
+        /* --- 饭太硬核心主页逻辑，务必放在第一位 --- */
+        { "key": "豆瓣", "name": "🎬 豆瓣·热映(主页评分)", "type": 3, "api": "csp_Douban", "searchable": 0, "quickSearch": 0, "filterable": 1 },
+        { "key": "热荐", "name": "🔥 热门·推荐(聚合榜单)", "type": 3, "api": "csp_AppHot", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         
         /* --- 你的 16 路 4K 采集站 --- */
         { "key": "sn_json", "name": "💎 索尼蓝光(4K)", "type": 1, "api": "https://suoniapi.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 },
