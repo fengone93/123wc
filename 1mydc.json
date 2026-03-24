@@ -3,21 +3,24 @@
     "spider": "https://raw.githubusercontent.com/h%E5%AE%A3/TVBox/main/custom_spider.jar",
     "lives": [
         {
-            "name": "🌐 自动更新·国内频道(IPv6)",
+            "name": "🌐 自动更新·国内(IPv6)",
             "type": 0,
             "url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
             "playerType": 1
         },
         {
-            "name": "📺 自动更新·全球频道",
+            "name": "📺 自动更新·全球(YueChan)",
             "type": 0,
             "url": "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
             "playerType": 1
         }
     ],
     "sites": [
-        { "key": "豆瓣", "name": "🎬 豆瓣热映(主页评分)", "type": 3, "api": "csp_Douban", "searchable": 0, "quickSearch": 0, "filterable": 1 },
+        /* --- 修正后的主页（影视仓专供） --- */
+        { "key": "豆瓣", "name": "🎬 豆瓣热映(主页评分)", "type": 3, "api": "csp_Douban", "searchable": 0, "quickSearch": 0, "filterable": 1, "ext": "https://raw.githubusercontent.com/h%E5%AE%A3/TVBox/main/douban.json" },
         { "key": "热荐", "name": "🔥 热门推荐(聚合榜单)", "type": 3, "api": "csp_AppHot", "searchable": 1, "quickSearch": 1, "filterable": 1 },
+        
+        /* --- 16路高清采集站 --- */
         { "key": "sn_json", "name": "💎 索尼蓝光(4K强推)", "type": 1, "api": "https://suoniapi.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         { "key": "lz_json", "name": "🎬 量子高清(4K/极速)", "type": 1, "api": "https://cj.lziapi.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         { "key": "hx_json", "name": "🌟 恒星资源(4K蓝光)", "type": 1, "api": "https://api.hxzy8.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 },
@@ -42,18 +45,7 @@
         { "name": "🛡️ 万能解析", "type": 0, "url": "https://jx.zui.cm/?url=" }
     ],
     "rules": [
-        { 
-            "name": "去广告切片", 
-            "hosts": ["vip.lz", "hd.lz", "vip.ffzy", "hd.ffzy", "suonizy", "hxzy"], 
-            "regex": [
-                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY", 
-                "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
-            ] 
-        },
-        { 
-            "name": "通用时长过滤", 
-            "hosts": ["*"], 
-            "regex": ["17.19", "19.63", "17.99", "14.45", "38.68"] 
-        }
+        { "name": "去广告切片", "hosts": ["vip.lz", "hd.lz", "vip.ffzy", "hd.ffzy", "suonizy", "hxzy"], "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY", "#EXTINF.*?\\s+.*?adjump.*?\\.ts"] },
+        { "name": "通用时长过滤", "hosts": ["*"], "regex": ["17.19", "19.63", "17.99", "14.45", "38.68"] }
     ]
 }
