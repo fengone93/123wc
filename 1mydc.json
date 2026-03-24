@@ -1,4 +1,19 @@
 {
+    "wallpaper": "https://bing.img.run/1920x1080.php",
+    "spider": "https://raw.githubusercontent.com/h%E5%AE%A3/TVBox/main/custom_spider.jar",
+    "lives": [
+        {
+            "name": "云端直播1(BMCH)",
+            "type": 0,
+            "url": "https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.m3u",
+            "playerType": 1
+        },
+        {
+            "name": "云端直播2(Tianmu)",
+            "type": 0,
+            "url": "https://raw.githubusercontent.com/TianmuTNT/iptv/main/iptv.txt"
+        }
+    ],
     "sites": [
         { "key": "ff_json", "name": "⚡ 非凡秒播", "type": 1, "api": "http://api.ffzyapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         { "key": "sn_json", "name": "💎 索尼蓝光", "type": 1, "api": "https://suoniapi.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 },
@@ -12,9 +27,25 @@
         { "key": "rn_json", "name": "🐂 红牛极速", "type": 1, "api": "https://www.hongniuzy2.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         { "key": "hy_json", "name": "🐯 虎牙资源", "type": 1, "api": "https://www.huyazy.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 }
     ],
-"parses": [
-    { "name": "💡 智能聚合解析", "type": 3, "url": "Web" },
-    { "name": "🚀 极速云解析", "type": 0, "url": "https://jx.json.icu/?url=" },
-    { "name": "🦐 虾米多线", "type": 0, "url": "https://jx.xmflv.com/?url=" }
-]
+    "parses": [
+        { "name": "💡 智能聚合解析", "type": 3, "url": "Web" },
+        { "name": "🦐 虾米多线", "type": 0, "url": "https://jx.xmflv.com/?url=" },
+        { "name": "🔥 热播解析", "type": 0, "url": "https://jx.yparse.com/index.php?url=" },
+        { "name": "🛡️ 万能解析", "type": 0, "url": "https://jx.zui.cm/?url=" }
+    ],
+    "rules": [
+        { 
+            "name": "去广告切片", 
+            "hosts": ["vip.lz", "hd.lz", "vip.ffzy", "hd.ffzy", "suonizy"], 
+            "regex": [
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY", 
+                "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
+            ] 
+        },
+        { 
+            "name": "通用时长过滤", 
+            "hosts": ["*"], 
+            "regex": ["17.19", "19.63", "17.99", "14.45", "38.68"] 
+        }
+    ]
 }
