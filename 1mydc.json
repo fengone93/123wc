@@ -1,26 +1,17 @@
 {
     "wallpaper": "https://bing.img.run/1920x1080.php",
-    "spider": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3839-115f-4531-9a7c-f698e670985c/1715582303924/custom_spider.jar",
+    /* 强行调用饭太硬最稳的爬虫大脑 */
+    "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/spider.jar;md5;458395568f6e8649f7b11910d93547f3",
     "lives": [
-        {
-            "name": "🌐 自动更新·国内(IPv6)",
-            "type": 0,
-            "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
-            "playerType": 1
-        },
-        {
-            "name": "📺 自动更新·全球(YueChan)",
-            "type": 0,
-            "url": "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
-            "playerType": 1
-        }
+        { "name": "🌐 自动更新·国内(IPv6)", "type": 0, "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u", "playerType": 1 },
+        { "name": "📺 自动更新·全球(YueChan)", "type": 0, "url": "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u", "playerType": 1 }
     ],
     "sites": [
-        /* --- 聚合主页：采用加速后的接口，确保秒开 --- */
-        { "key": "豆瓣", "name": "🎬 豆瓣·热映(主页评分)", "type": 3, "api": "csp_Douban", "searchable": 0, "quickSearch": 0, "filterable": 1 },
-        { "key": "热荐", "name": "🔥 热门·推荐(聚合榜单)", "type": 3, "api": "csp_AppHot", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": "http://150.158.170.18:88/v/" },
+        /* --- 强行缝合：饭太硬同款主页 --- */
+        { "key": "豆瓣", "name": "🎬 豆瓣·热映(主页评分)", "type": 3, "api": "csp_Douban", "searchable": 0, "quickSearch": 0, "filterable": 1, "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/h宣/TVBox/main/douban.json" },
+        { "key": "热荐", "name": "🔥 热门·推荐(聚合榜单)", "type": 3, "api": "csp_AppHot", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/h宣/TVBox/main/apphot.json" },
         
-        /* --- 16路精选采集站（确保 4K 优先且稳定） --- */
+        /* --- 你的 16 路高清采集站 --- */
         { "key": "sn_json", "name": "💎 索尼蓝光(4K)", "type": 1, "api": "https://suoniapi.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         { "key": "lz_json", "name": "🎬 量子高清(4K)", "type": 1, "api": "https://cj.lziapi.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         { "key": "hx_json", "name": "🌟 恒星资源(4K)", "type": 1, "api": "https://api.hxzy8.com/api.php/provide/vod/at/json/", "searchable": 1, "quickSearch": 1, "filterable": 1 },
