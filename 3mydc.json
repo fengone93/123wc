@@ -1,6 +1,7 @@
 {
     "wallpaper": "https://bing.img.run/1920x1080.php",
-    "spider": "https://raw.githubusercontent.com/h%E5%AE%A3/TVBox/main/custom_spider.jar",
+    /* 使用通用的全能 Spider 接口 */
+    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/hclink/TVBox/main/spider.jar",
     "lives": [
         {
             "name": "🌐 自动更新·国内频道(IPv6)",
@@ -16,7 +17,10 @@
         }
     ],
     "sites": [
-        { "key": "sn55_json", "name": "💎 索尼蓝光(优先/搜索)", "type": 1, "api": "https://suoniapi.com/api.php/provide/vod/", "searchable": 1, "quickSearch": 1, "filterable": 1, "playUrl": "" },
+        /* 索尼爬虫版：解决 API 搜索不支持的问题 */
+        { "key": "csp_Sony", "name": "💎 索尼蓝光(爬虫加强/置顶)", "type": 3, "api": "csp_Suoni", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": "https://suonizy.com/" },
+        
+        /* 其他核心采集站：保持 ac=list 动态获取分类 */
         { "key": "lz_json", "name": "🎬 量子高清(4K/极速)", "type": 1, "api": "https://cj.lziapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         { "key": "hx_json", "name": "🌟 恒星资源(4K蓝光)", "type": 1, "api": "https://api.hxzy8.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         { "key": "uk_json", "name": "🎥 U酷资源(高码率4K)", "type": 1, "api": "https://api.ukuapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1 },
