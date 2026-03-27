@@ -1,15 +1,6 @@
 {
     "sites": [
-        { 
-            "key": "sn_json", 
-            "name": "💎 索尼蓝光(4K强推)", 
-            "type": 1, 
-            "api": "https://suoniapi.com/api.php/provide/vod/?ac=list", 
-            "searchable": 1, 
-            "quickSearch": 1, 
-            "filterable": 1, 
-            "categories": ["1","2","3","4","6","7","8","9","10","13","14","15","16","25","29","54","62","64","66","67","68","69"] 
-        },
+        { "key": "sn_json", "name": "💎 索尼蓝光(4K强推)", "type": 1, "api": "https://suoniapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "categories": ["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","纪录片","国产剧","欧美剧","韩剧","日剧","香港剧","台湾剧","泰剧","海外剧","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","大陆综艺","港台综艺","日韩综艺","欧美综艺"] },
         { "key": "lz_json", "name": "🎬 量子高清(4K/极速)", "type": 1, "api": "https://cj.lziapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         { "key": "uk_json", "name": "🎥 U酷资源(高码率4K)", "type": 1, "api": "https://api.ukuapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1 },
         { "key": "wl_json", "name": "🌏 卧龙海外(海外专线)", "type": 1, "api": "https://collect.wolongzyw.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1 },
@@ -33,18 +24,51 @@
         { "name": "🛡️ 万能解析", "type": 0, "url": "https://jx.zui.cm/?url=" }
     ],
     "rules": [
-        { 
-            "name": "去广告切片", 
-            "hosts": ["vip.lz", "hd.lz", "vip.ffzy", "hd.ffzy", "suonizy", "hxzy", "kczy", "tkzy", "ukuzy"], 
+        {
+            "name": "去广告切片-专用",
+            "hosts": [
+                "vip.lz", "hd.lz", "vip.ffzy", "hd.ffzy", "suonizy", "hxzy", "kczy", "tkzy", "ukuzy",
+                "lziapi.com", "ukuapi.com", "ffzyapi.com", "xinlangapi.com", "jszyapi.com", "apibdzy.com",
+                "jyzyapi.com", "bfzyapi.com", "ikunzyapi.com", "hongniuzy2.com", "huyazy.com", "yzzy-api.com",
+                "wujinapi.me", "ukuapi88.com", "suoniapi.com", "wolongzyw.com", "collect.wolongzyw.com"
+            ],
             "regex": [
-                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY", 
-                "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
-            ] 
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+                "#EXTINF.*?\\s+.*?adjump.*?\\.ts",
+                "#EXT-X-CUE-OUT[^\\n]*",
+                "#EXT-X-AD[^\\n]*",
+                "#EXT-X-DATERANGE[^\\n]*ID=\"ad\"[^\\n]*"
+            ]
         },
-        { 
-            "name": "通用时长过滤", 
-            "hosts": ["*"], 
-            "regex": ["17.19", "19.63", "17.99", "14.45", "38.68"] 
+        {
+            "name": "通用时长过滤",
+            "hosts": ["*"],
+            "regex": [
+                "17\\.19",
+                "19\\.63",
+                "17\\.99",
+                "14\\.45",
+                "38\\.68",
+                "5\\.0[0-5]",
+                "6\\.0[0-6]",
+                "30\\.0[0-3]"
+            ]
+        },
+        {
+            "name": "广告标签过滤",
+            "hosts": ["*"],
+            "regex": [
+                "#EXT-X-DISCONTINUITY[^\\n]*\\r*\\n*#EXTINF:[0-9]+\\.[0-9]+,[^\\n]*\\r*\\n*.*?ad[video]*.*?\\.ts",
+                "#EXTINF:[0-9]+\\.[0-9]+,[^\\n]*\\r*\\n*.*?ad[^\\/]*\\/.*?\\.ts",
+                "#EXTINF:[0-9]+\\.[0-9]+,[^\\n]*\\r*\\n*.*?\\/ad[^\\/]*\\/.*?\\.ts"
+            ]
+        },
+        {
+            "name": "跳广告域名过滤",
+            "hosts": ["*"],
+            "regex": [
+                "#EXTINF:[^\\n]*\\r*\\n*https?:\\/\\/(?:[^\\/]*\\.)?(?:ads?|doubleclick|googleadservices|googlesyndication|adserver|adservice|adnxs|advertising)[^\\n]*\\.ts"
+            ]
         }
     ]
 }
