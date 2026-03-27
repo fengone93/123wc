@@ -1,53 +1,50 @@
 {
-    "wallpaper": "https://bing.img.run/1920x1080.php",
-    "spider": "https://github.com/guot55/YGBH/raw/refs/heads/main/jar/XYQ1.jar",
-    "sites": [
-        {
-            "key": "sn_json",
-            "name": "💎 索尼蓝光 | 4K筛选",
-            "type": 1,
-            "api": "https://suoniapi.com/api.php/provide/vod/at/json/",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "categories": ["电影", "电视剧", "综艺", "动漫"]
-        },
-        {
-            "key": "ff_json",
-            "name": "⚡ 非凡秒播 | 综合筛选",
-            "type": 1,
-            "api": "https://cj.ffzyapi.com/api.php/provide/vod/at/json/",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "categories": ["电影", "电视剧", "综艺", "动漫"]
-        },
-        {
-            "key": "lz_json",
-            "name": "🎬 量子高清 | 极速筛选",
-            "type": 1,
-            "api": "https://cj.lziapi.com/api.php/provide/vod/at/json/",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "categories": ["电影", "电视剧", "综艺", "动漫"]
-        },
-        {
-            "key": "wl_json",
-            "name": "🌍 卧龙海外 | 马来直连",
-            "type": 1,
-            "api": "https://collect.wolongzyw.com/api.php/provide/vod/at/json/",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "categories": ["电影", "电视剧", "综艺", "动漫"]
-        }
-    ],
-    "parses": [
-        { "name": "💡 智能解析", "type": 3, "url": "Web" },
-        { "name": "🚀 极速解析", "type": 0, "url": "https://jx.json.icu/?url=" }
-    ],
-    "rules": [
-        { "name": "广告过滤", "hosts": ["vip.lz", "hd.lz", "vip.ffzy"], "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY"] }
+  "key": "Liangzi_Selected",
+  "name": "量子资源 | 精选旗舰",
+  "type": 1,
+  "api": "https://cj.lziapi.com/api.php/provide/vod/?ac=list",
+  "searchable": 1,
+  "quickSearch": 1,
+  "filterable": 1,
+  /* 首页 UI：采用 4:3 比例的矩形海报，适配豆瓣首页风格 */
+  "style": {
+    "type": "rect",
+    "ratio": 1.33
+  },
+  /* 严格甄选：只显示这四个分类，屏蔽所有杂乱频道 */
+  "categories": ["电影", "连续剧", "综艺", "动漫"],
+  "filter": {
+    "1": [ // 1 通常为电影分类 ID
+      {
+        "key": "year",
+        "name": "年份",
+        "value": [
+          {"n": "全部", "v": ""},
+          {"n": "2026", "v": "2026"},
+          {"n": "2025", "v": "2025"},
+          {"n": "2024", "v": "2024"},
+          {"n": "2023", "v": "2023"},
+          {"n": "2022", "v": "2022"},
+          {"n": "2021", "v": "2021"},
+          {"n": "2020", "v": "2020"},
+          {"n": "2019", "v": "2019"},
+          {"n": "更早", "v": "2018"}
+        ]
+      },
+      {
+        "key": "area",
+        "name": "地区",
+        "value": [
+          {"n": "全部", "v": ""},
+          {"n": "中国大陆", "v": "中国大陆"},
+          {"n": "中国香港", "v": "中国香港"},
+          {"n": "中国台湾", "v": "中国台湾"},
+          {"n": "美国", "v": "美国"},
+          {"n": "韩国", "v": "韩国"},
+          {"n": "日本", "v": "日本"},
+          {"n": "泰国", "v": "泰国"}
+        ]
+      }
     ]
+  }
 }
