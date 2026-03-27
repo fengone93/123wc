@@ -1,39 +1,39 @@
 {
-  "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/lib/spider.jar",
-  "sites": [
-    {
-      "key": "lz_tv_fix",
-      "name": "🎬 量子高清 | 电视专用版",
-      "type": 1,
-      "api": "https://cj.lziapi.com/api.php/provide/vod/?ac=list",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "flag": ["lzm3u8", "qzm3u8", "ffm3u8", "snm3u8", "dbm3u8"],
-      // 建议先删除或注释掉可能失效的 playUrl，改用下方 parses
-      // "playUrl": "https://jx.xmflv.com/?url=",
-      "playerType": 1,
-      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-      // 这里填入从接口获取的完整分类列表（太长不重复写，你可以复制上面我返回的class部分）
-      "class": [
-        {"type_id":1,"type_name":"电影片"},
-        {"type_id":2,"type_name":"连续剧"},
-        {"type_id":3,"type_name":"综艺片"},
-        {"type_id":4,"type_name":"动漫片"},
-        {"type_id":6,"type_name":"动作片"},
-        // ... 请把上面JSON里class数组的所有对象复制过来
-      ]
+  "key": "lz_tv_fix",
+  "name": "🎬 量子高清 | 电视专用版",
+  "type": 1,
+  "api": "https://cj.lziapi.com/api.php/provide/vod/?ac=list",
+  "searchable": 1,
+  "quickSearch": 1,
+  "filterable": 1,          // 必须为1
+  "filter": {                // 新增筛选定义
+    "0": {                   // 分类ID为0代表全局筛选（所有分类共用）
+      "year": {
+        "name": "年份",
+        "key": "year",
+        "init": "全部",
+        "value": [
+          {"n": "全部", "v": ""},
+          {"n": "2026", "v": "2026"},
+          {"n": "2025", "v": "2025"},
+          {"n": "2024", "v": "2024"},
+          {"n": "2023", "v": "2023"},
+          {"n": "2022", "v": "2022"},
+          {"n": "2021", "v": "2021"},
+          {"n": "2020", "v": "2020"},
+          {"n": "2019", "v": "2019"},
+          {"n": "2018", "v": "2018"},
+          {"n": "2017", "v": "2017"},
+          {"n": "2016", "v": "2016"},
+          {"n": "2015", "v": "2015"},
+          {"n": "2014", "v": "2014"},
+          {"n": "2013", "v": "2013"},
+          {"n": "2012", "v": "2012"},
+          {"n": "2011", "v": "2011"},
+          {"n": "2010", "v": "2010"}
+        ]
+      }
     }
-  ],
-  "parses": [
-    { "name": "💡 聚合解析", "type": 3, "url": "Web" },
-    { "name": "🚀 极速解析", "type": 0, "url": "https://jx.jsonplayer.com/player/?url=" }
-  ],
-  "rules": [
-    { 
-      "name": "量子去广告", 
-      "hosts": ["vip.lz", "hd.lz"], 
-      "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY"] 
-    }
-  ]
+  },
+  // ... 其余配置不变
 }
