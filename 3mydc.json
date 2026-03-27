@@ -10,10 +10,10 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      /* 补全 UA 和样式细节 */
       "ua": "FongMi/1.0",
-      "style": { "type": "rect", "ratio": 0.75 },
-      /* 严格按照 class 映射，确保导航栏干干净净 */
+      /* 关键：指定哪些线路需要解析，量子资源常用这些标记 */
+      "playUrl": "",
+      "flag": ["lzm3u8", "qzm3u8", "duoduo", "ffm3u8", "snm3u8"],
       "class": [
         {"type_id": 1, "type_name": "电影"},
         {"type_id": 2, "type_name": "连续剧"},
@@ -21,25 +21,21 @@
         {"type_id": 4, "type_name": "动漫"}
       ],
       "filter": {
-        "1": [{"key": "year", "name": "年份", "value": [{"n": "全部", "v": ""}, {"n": "2026", "v": "2026"}, {"n": "2025", "v": "2025"}, {"n": "2024", "v": "2024"}]}],
-        "2": [{"key": "year", "name": "年份", "value": [{"n": "全部", "v": ""}, {"n": "2026", "v": "2026"}, {"n": "2025", "v": "2025"}, {"n": "2024", "v": "2024"}]}],
-        "3": [{"key": "year", "name": "年份", "value": [{"n": "2026", "v": "2026"}]}],
-        "4": [{"key": "year", "name": "年份", "value": [{"n": "2026", "v": "2026"}]}]
+        "1": [{"key": "year", "name": "年份", "value": [{"n": "全部", "v": ""}, {"n": "2026", "v": "2026"}, {"n": "2025", "v": "2025"}, {"n": "2024", "v": "2024"}]}]
       }
     }
   ],
   "parses": [
-    { "name": "💡 智能解析", "type": 3, "url": "Web" }
+    /* 依照 FongMi 文档，将聚合解析放在第一位，增强兼容性 */
+    { "name": "💡 聚合解析", "type": 3, "url": "Web" },
+    { "name": "🚀 极速解析", "type": 0, "url": "https://jx.jsonplayer.com/player/?url=", "header": { "User-Agent": "Mozilla/5.0" } },
+    { "name": "🦐 虾米解析", "type": 0, "url": "https://jx.xmflv.com/?url=" }
   ],
   "rules": [
     { 
-      "name": "量子屏蔽", 
+      "name": "去广告", 
       "hosts": ["vip.lz", "hd.lz"], 
       "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY"] 
     }
   ]
-}
-}
-  ]
-}
 }
