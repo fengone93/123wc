@@ -4,16 +4,6 @@
   "logo": "",
   "sites": [
     {
-      "key": "豆豆",
-      "name": "【Work-Life balance 1.0】",
-      "type": 3,
-      "api": "csp_DouDouGuard",
-      "indexs": 1,
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0
-    },
-    {
       "key": "Tg|豆瓣",
       "name": "🔍Tg豆瓣┃本接口免费-🈲贩卖",
       "type": 3,
@@ -29,10 +19,10 @@
       }
     },
     {
-      "key": "csp_DouBan",
+      "key": "csp_DouDouGuard",
       "name": "🔍豆瓣",
       "type": 3,
-      "api": "csp_DouBan",
+      "api": "csp_DouDouGuard",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -945,22 +935,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
-    },
-    {
-      "key": "柚子资源",
-      "name": "🍊柚子资源",
-      "type": 1,
-      "api": "https://api.yzzy-api.com/inc/api.php",
-      "searchable": 1,
-      "quickSearch": 1,
-      "categories": [
-        "动作片", "喜剧片", "爱情片", "科幻片", "恐怖片", "剧情片", "战争片",
-        "国产剧", "台湾剧", "韩国剧", "欧美剧", "香港剧", "泰国剧", "日本剧",
-        "记录片", "动画片", "海外剧", "倫理片",
-        "大陆综艺", "港台综艺", "日韩综艺", "欧美综艺",
-        "国产动漫", "日韩动漫", "欧美动漫", "港台动漫", "海外动漫",
-        "搞笑", "音乐", "影视", "汽车", "短剧大全", "预告片", "体育"
-      ]
     }
   ],
   "parses": [
