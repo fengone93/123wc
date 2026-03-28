@@ -117,14 +117,6 @@
       "ext": "7lj763gg402i7942433293i0g9458881hig7j94k818g326i51491kljlk134k401g9g54gk8j5i9097751kh28kh9kj11kjl92k6046l0gkj8l630892glj67g61h48g3kjiigkg0263k6h955430429ill43307gk8k0602hh09lh0j6jh7h"
     },
     {
-      "key": "趣看",
-      "name": "🥽趣看",
-      "type": 3,
-      "api": "csp_Qiji",
-      "playerType": 2,
-      "ext": "7lj763gg402i794245238hjjg45j8295k5hji64882862l321l4215hkkg1l5g001i9k5ihkj6539l8j2208h380k5h21hk8lj2l6i57kgh8i2lj28ih29kh7hh14615kkg5i4h2g57l7h7iij17345hihkk546j27g5g86837h5i6l581j97ig966460g73329575"
-    },
-    {
       "key": "王子",
       "name": "🍟王子",
       "type": 3,
@@ -196,16 +188,6 @@
       "filterable": 1
     },
     {
-      "key": "csp_Lkdy",
-      "name": "🏔️来看",
-      "type": 3,
-      "api": "csp_Lkdy",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://lkvod.com"
-    },
-    {
       "key": "剧圈圈",
       "name": "⭕剧圈圈",
       "type": 3,
@@ -225,6 +207,26 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://gh-proxy.com/raw.githubusercontent.com/fengone93/123abc/main/json/农民影视.json"
+    },
+    {
+      "key": "欧乐",
+      "name": "🎥欧乐影院",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "请求头": "User-Agent$MOBILE_UA",
+        "编码": "UTF-8",
+        "分类url": "https://www.olehdtv.com/vodshow/{cateId}--------{catePg}---.html",
+        "分类": "电影$1#电视剧$2#综艺$3#动漫$4#短剧$5",
+        "类型": "动作片$6#喜剧片$7#爱情片$8#科幻片$9#奇幻片$10#恐怖片$11#剧情片$12#战争片$13#动画片$14#悬疑片$15#冒险片$16#犯罪片$17#惊悚片$18#纪录片$19#国产剧$20#港剧$21#台剧$22#日剧$23#韩剧$24#欧美剧$25#泰剧$26#其他剧$27#内地综艺$28#港台综艺$29#日韩综艺$30#欧美综艺$31#国产动漫$32#日本动漫$33#韩国动漫$34#欧美动漫$35#短剧$36",
+        "搜索url": "https://www.olehdtv.com/vodsearch/{wd}----------{pg}---.html",
+        "简介": "简介：&&",
+        "导演": "导演：",
+        "主演": "主演："
+      }
     },
     {
       "key": "永乐",
@@ -713,19 +715,6 @@
       }
     },
     {
-      "key": "盘Ta",
-      "name": "🍥盘Ta",
-      "type": 3,
-      "api": "csp_PanTa",
-      "searchable": 1,
-      "filterable": 0,
-      "switchable": 0,
-      "ext": {
-        "siteUrl": "https://www.91panta.cn/",
-        "commonConfig": "https://gh-proxy.com/raw.githubusercontent.com/fengone93/123abc/main/json/peizhi.json"
-      }
-    },
-    {
       "key": "网盘集合",
       "name": "🅿网盘集合|4K",
       "type": 3,
@@ -736,22 +725,6 @@
       "ext": {
         "commonConfig": "https://gh-proxy.com/raw.githubusercontent.com/fengone93/123abc/main/json/peizhi.json",
         "share": "https://gh-proxy.com/raw.githubusercontent.com/fengone93/123abc/main/json/网盘集合.json"
-      }
-    },
-    {
-      "key": "Youtube",
-      "name": "⚡Youtube",
-      "type": 3,
-      "api": "csp_Youtube",
-      "searchable": 1,
-      "changeable": 1,
-      "style": {
-        "type": "rect",
-        "ratio": 1.433
-      },
-      "ext": {
-        "commonConfig": "https://gh-proxy.com/raw.githubusercontent.com/fengone93/123abc/main/json/peizhi.json",
-        "json": "https://gh-proxy.com/raw.githubusercontent.com/fengone93/123abc/main/json/youtube.json"
       }
     },
     {
