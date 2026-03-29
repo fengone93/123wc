@@ -4,10 +4,11 @@
   "logo": "",
   "sites": [
   {
-  "key": "douban_hot",
-  "name": "豆瓣热播",
+  "key": "douban_new",
+  "name": "🐼豆瓣热播",
   "type": 3,
-  "api": "csp_DouBan",
+  "api": "https://gh-proxy.com/raw.githubusercontent.com/fengone93/123abc/main/js/lib/drpy2.min.js",
+  "ext": "https://gh-proxy.com/raw.githubusercontent.com/fengone93/123abc/main/js/豆瓣.js",
   "searchable": 1,
   "quickSearch": 1,
   "filterable": 1
