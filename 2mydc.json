@@ -682,12 +682,12 @@
       "jar": "./jar/fan.txt;md5;8432d174d72d5b608ae1bcd16d966847"
     },
     {
-    "key": "云播",
-    "name": "云播｜APP",
-    "type": 3,
-    "api": "csp_AppFox",
-    "jar": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/spider.jar",
-    "ext": {
+      "key": "云播",
+      "name": "云播｜APP",
+      "type": 3,
+      "api": "csp_AppFox",
+      "jar": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/spider.jar",
+      "ext": {
         "host": "http://app.hktvyb.cc"
       }
     },
@@ -696,19 +696,22 @@
       "name": "云播｜影视",
       "type": 3,
       "api": "csp_Tvyb",
+      "jar": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/spider.jar",
       "ext": "http://www.tvyb03.com"
     },
     {
       "key": "坚果影视",
       "name": "坚果｜APP",
       "type": 3,
-      "api": "csp_AppJg"
+      "api": "csp_AppJg",
+      "jar": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/spider.jar"
     },
     {
       "key": "秒看",
       "name": "秒看｜APP",
       "type": 3,
       "api": "csp_AppGet",
+      "jar": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/spider.jar",
       "searchable": 1,
       "changeable": 1,
       "ext": {
@@ -723,6 +726,7 @@
       "name": "黑猫｜APP",
       "type": 3,
       "api": "csp_AppGet",
+      "jar": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/spider.jar",
       "searchable": 1,
       "changeable": 1,
       "ext": {
@@ -777,6 +781,7 @@
       "name": "星河｜APP",
       "type": 3,
       "api": "csp_AppQi",
+      "jar": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/spider.jar",
       "searchable": 1,
       "changeable": 1,
       "ext": {
@@ -792,6 +797,7 @@
       "name": "段友｜APP",
       "type": 3,
       "api": "csp_AppGet",
+      "jar": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/spider.jar",
       "searchable": 1,
       "changeable": 1,
       "ext": {
@@ -804,9 +810,10 @@
       "key": "星空",
       "name": "星空｜APP",
       "type": 3,
+      "api": "csp_AppGet",
+      "jar": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/spider.jar",
       "searchable": 1,
       "changeable": 1,
-      "api": "csp_AppGet",
       "ext": {
         "url": "http://xk7.xkgzs.xyz",
         "dataKey": "107jkcdncofcdkjk",
@@ -827,7 +834,8 @@
       "key": "瓜子影视",
       "name": "瓜子｜影视",
       "type": 3,
-      "api": "csp_Gz360"
+      "api": "csp_Gz360",
+      "jar": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/spider.jar"
     }
   ],
   "parses": [
