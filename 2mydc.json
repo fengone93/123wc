@@ -5,10 +5,10 @@
   "sites": [
     {
       "key": "原创",
-      "name": "☀原创┃不卡",
+      "name": "☀原创3┃不卡",
       "type": 3,
       "api": "csp_YCyzGuard",
-      "timeout": 10,
+      "timeout": 5,
       "playerType": 1,
       "searchable": 1,
       "quickSearch": 1,
@@ -19,7 +19,7 @@
       "name": "📔厂长┃不卡",
       "type": 3,
       "api": "csp_NewCzGuard",
-      "timeout": 10,
+      "timeout": 5,
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
@@ -30,7 +30,7 @@
       "name": "闪影｜APP",
       "type": 3,
       "api": "csp_AppYsV2",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -41,7 +41,7 @@
       "name": "奴娜丨APP",
       "type": 3,
       "api": "csp_AppYsV2",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -52,7 +52,7 @@
       "name": "秒看｜APP",
       "type": 3,
       "api": "csp_AppGet",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "changeable": 1,
       "ext": {
@@ -67,7 +67,7 @@
       "name": "段友｜APP",
       "type": 3,
       "api": "csp_AppGet",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "changeable": 1,
       "ext": {
@@ -81,7 +81,7 @@
       "name": "🍄比特┃手机",
       "type": 3,
       "api": "csp_BttwooGuard",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
@@ -91,7 +91,7 @@
       "name": "晓米丨APP",
       "type": 3,
       "api": "csp_AppYsV2",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -102,14 +102,14 @@
       "name": "坚果｜APP",
       "type": 3,
       "api": "csp_AppJg",
-      "timeout": 10
+      "timeout": 5
     },
     {
       "key": "黑猫",
       "name": "黑猫｜APP",
       "type": 3,
       "api": "csp_AppGet",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "changeable": 1,
       "ext": {
@@ -123,7 +123,7 @@
       "name": "🔥骚火",
       "type": 3,
       "api": "csp_SaoHuo",
-      "timeout": 10,
+      "timeout": 5,
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
@@ -135,7 +135,7 @@
       "name": "超前丨APP",
       "type": 3,
       "api": "csp_AppYsV2",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -147,14 +147,14 @@
       "name": "瓜子｜影视",
       "type": 3,
       "api": "csp_Gz360",
-      "timeout": 10
+      "timeout": 5
     },
     {
       "key": "云播",
       "name": "云播｜APP",
       "type": 3,
       "api": "csp_AppFox",
-      "timeout": 10,
+      "timeout": 5,
       "ext": {
         "host": "http://app.hktvyb.cc"
       }
@@ -164,7 +164,7 @@
       "name": "💮文采┃秒播",
       "type": 3,
       "api": "csp_JpysGuard",
-      "timeout": 10,
+      "timeout": 5,
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
@@ -175,7 +175,7 @@
       "name": "🦌奇优",
       "type": 3,
       "api": "csp_Qiyou",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -185,7 +185,7 @@
       "name": "🍓糯米┃秒播",
       "type": 3,
       "api": "csp_NmyswvGuard",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
@@ -195,7 +195,7 @@
       "name": "星空｜APP",
       "type": 3,
       "api": "csp_AppGet",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "changeable": 1,
       "ext": {
@@ -209,7 +209,7 @@
       "name": "🦁灵虎",
       "type": 3,
       "api": "csp_Xdai",
-      "timeout": 10,
+      "timeout": 5,
       "ext": "7lj763gg402i7942532384j7lk0ljji7ghl19313j490266k0g1855k7k103474j1i9349h68842h3h016399jj1g6gk4jlhh367714gk5g2jhji12g819j33jlj1l15k6g492l0"
     },
     {
@@ -217,7 +217,7 @@
       "name": "🍟王子",
       "type": 3,
       "api": "csp_Xdai",
-      "timeout": 10,
+      "timeout": 5,
       "ext": "7lj763gg402i7942503g9g9jk909jji3g0li9j088291253h4k141gggkk41435h43924kg6ik48i0856j01k882glkh4kllg538704jl5k4j1gl27j321g03lll"
     },
     {
@@ -225,7 +225,7 @@
       "name": "👩🌾农民",
       "type": 3,
       "api": "csp_XYQHiker",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -236,7 +236,7 @@
       "name": "🌙永夜",
       "type": 3,
       "api": "csp_Xdai",
-      "timeout": 10,
+      "timeout": 5,
       "playerType": 2,
       "ext": "7lj763gg0939790i413gjh9kk011jijiggll990k9li73l224k770ik0j10l502j2j9l798lhj778hh33g018h94k5j400kij3567j7gji97kkk4118421g03lll"
     },
@@ -245,7 +245,7 @@
       "name": "💢番薯",
       "type": 3,
       "api": "csp_Xdai",
-      "timeout": 10,
+      "timeout": 5,
       "playerType": 2,
       "ext": "7lj763gg402i79425l2l9j9jh14i9ijil0h1jk58ih8633354h0l18lil40h755g029i0ghhil4gh89i133hk9i9l1k604i9g4797k09k8k5j3j73kgj1hg725gg575ig9g790"
     },
@@ -254,7 +254,7 @@
       "name": "⛅天天",
       "type": 3,
       "api": "csp_TTian",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -265,7 +265,7 @@
       "name": "🥇金牌",
       "type": 3,
       "api": "csp_Jpys",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -276,7 +276,7 @@
       "name": "🧲电影港",
       "type": 3,
       "api": "csp_Dygang",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -286,7 +286,7 @@
       "name": "💢聚搜",
       "type": 3,
       "api": "csp_qiao2",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -297,7 +297,7 @@
       "name": "🌀 暴风老牌",
       "type": 1,
       "api": "https://bfzyapi.com/api.php/provide/vod/?ac=list",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -307,7 +307,7 @@
       "name": "🎯 百度资源",
       "type": 1,
       "api": "https://api.apibdzy.com/api.php/provide/vod/?ac=list",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -317,7 +317,7 @@
       "name": "🐯 虎牙资源",
       "type": 1,
       "api": "https://www.huyazy.com/api.php/provide/vod/?ac=list",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -327,7 +327,7 @@
       "name": "📺热播┃多线",
       "type": 3,
       "api": "csp_AppTTGuard",
-      "timeout": 10,
+      "timeout": 5,
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
@@ -339,7 +339,7 @@
       "name": "💢聚搜2",
       "type": 3,
       "api": "csp_qiao2",
-      "timeout": 10,
+      "timeout": 5,
       "playerType": 2,
       "ext": "7lj763gg402i7942412h849jg1558j9jl8g19213il86316k465719lik158491h179312hk935886ig2l05g9"
     },
@@ -348,7 +348,7 @@
       "name": "✂️荐片",
       "type": 3,
       "api": "csp_Jianpian",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -359,7 +359,7 @@
       "name": "🎬 量子高清(4K/极速)",
       "type": 1,
       "api": "https://cj.lziapi.com/api.php/provide/vod/?ac=list",
-      "timeout": 10,
+      "timeout": 5,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
