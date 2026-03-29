@@ -8,6 +8,7 @@
       "name": "🔍Tg豆瓣┃本接口免费-🈲贩卖",
       "type": 3,
       "api": "csp_TgYunDouBanPan",
+      "timeout": 10,
       "searchable": 1,
       "quickSearch": 1,
       "ext": {
