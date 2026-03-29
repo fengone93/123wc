@@ -10,7 +10,7 @@
       "api": "csp_DouDouGuard",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 0,
+      "filterable": 1,
       "jar": "./jar/fan.txt;md5;8432d174d72d5b608ae1bcd16d966847"
       "timeout": 5
     },
