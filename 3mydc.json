@@ -4,8 +4,8 @@
   "logo": "",
   "sites": [
     {
-      "key": "豆瓣01",
-      "name": "豆瓣",
+      "key": "豆瓣",
+      "name": "豆瓣01",
       "type": 3,
       "api": "csp_Douban",
       "indexs": 1,
