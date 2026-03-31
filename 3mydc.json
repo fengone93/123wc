@@ -1,8 +1,19 @@
 {
-  "spider": "https://github.com/fengone93/tvbox1/raw/refs/heads/master/jar/fan.txt",
+  "spider": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/pg.jar;md5;fcd3be29030c912a28d7a205a88f749d",
   "wallpaper": "",
   "logo": "",
-  "sites": [],
+  "sites": [
+    {
+      "key": "豆瓣",
+      "name": "豆瓣",
+      "type": 3,
+      "api": "csp_Douban",
+      "indexs": 1,
+      "searchable": 0,
+      "changeable": 1,
+      "ext": "./json/douban.json"
+    }
+  ],
   "parses": [
     {
       "name": "Web聚合",
