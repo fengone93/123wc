@@ -1,11 +1,11 @@
 {
-  "spider": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/pg.jar;fcd3be29030c912a28d7a205a88f749d",
+  "spider": "https://github.com/fengone93/123abc/raw/refs/heads/main/jar/custom_spider.jar",
   "wallpaper": "",
   "logo": "",
   "sites": [
     {
       "key": "豆瓣",
-      "name": "豆瓣2",
+      "name": "豆瓣3",
       "type": 3,
       "api": "csp_Douban",
       "indexs": 1,
